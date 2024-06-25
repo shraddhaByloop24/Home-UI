@@ -1,0 +1,239 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+.imgs {
+    height: 100%;
+    width: 25%;
+    position: absolute;
+    z-index: 0000 !important;
+    top: 5%;
+    left: 0;
+}
+
+#svg1 {
+    width: 180px;
+    height: 180px;
+    text-align: center;
+}
+
+.dm-width {
+    margin-left: 60px;
+}
+
+
+.dm-device {
+    position: relative;
+    width: 100%;
+    height: 750px;
+}
+
+.device {
+    position: absolute;
+    top: 0%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 90%;
+    height: 110%;
+    -webkit-background-size: 100% 100%;
+    background-size: cover;
+    background-image: url(mobile-frame.png);
+    background-position: center center;
+    z-index: 0;
+}
+
+.screen {
+    overflow: hidden;
+    position: absolute;
+    top: 12%;
+    bottom: 12%;
+    left: 13.2%;
+    right: 13.7%;
+    border-radius: 30px;
+    background-color: bla;
+    z-index: 1;
+}
+
+.slider {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.slider div {
+    height: 100%;
+}
+
+.slider__item {
+    font-size: 100px;
+    color: rgba(255, 255, 255, 0.7);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.slider__item--1 {
+    background-color: black;
+    background-image: url(Images/smartphone-1.png);
+    background-size: cover;
+
+}
+
+.slider__item--2 {
+    background-color: black;
+
+    background-image: url(Images/smartphone-2.png);
+    background-size: cover;
+
+}
+
+.slider__item--3 {
+
+    background-color: black;
+    background-image: url(Images/smartphone-3.png);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.slider__item--4 {
+
+    background-image: url(Images/smartphone-4.png);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.main-content {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.set-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 30px;
+}
+
+
+
+@media (max-width: 1200px) {
+    body{
+        /* background-color: aquamarine; */
+    }
+    .device {
+        position: absolute;
+        top: 0%;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 110%;
+        height: 100%;
+        -webkit-background-size: 100% 100%;
+        background-size: cover;
+        background-image: url(mobile-frame.png);
+        background-position: center center;
+        z-index: 0;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    body {
+        /* background-color: rgb(202, 255, 127); */
+    }
+
+    .imgs {
+        height: 70%;
+        width: 70%;
+        position: absolute;
+        z-index: 0000 !important;
+        top: 3%;
+        left: 0;
+    }
+
+    .dm-device {
+        position: relative;
+        width: 100%;
+        padding-bottom: 170.477897%;
+
+    }
+
+    .device {
+        position: absolute;
+        top: 0%;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        -webkit-background-size: 100% 100%;
+        background-size: cover;
+        background-image: url(mobile-frame.png);
+        background-position: center center;
+        z-index: 0;
+    }
+
+    .screen {
+        overflow: hidden;
+        position: absolute;
+        top: 12%;
+        bottom: 12%;
+        left: 19%;
+        right: 13.7%;
+        border-radius: 50px;
+        background-color: bla;
+        z-index: 1;
+        width: 61.2%;
+    }
+
+    .microsoft {
+        padding-top: 20px;
+        height: 100%;
+        width: 100% !important;
+    }
+
+    .heading {
+        font-size: 40px;
+    }
+
+    .set-list {
+        display: block;
+        text-align: center;
+        font-size: 30px;
+        padding-top: 30px;
+    }
+
+    .paragraph {
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .svg1 {
+        width: 100%;
+        height: 100%;
+    }
+
+    .main-content {
+        margin-top: -50px;
+    }
+}
