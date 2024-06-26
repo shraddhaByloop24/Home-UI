@@ -20,35 +20,16 @@
 <head>
     <meta charset="UTF-8">
     <title>mobile slider</title>
-
  <!-- Google Translate API script -->
- <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+ <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
-    <script>
-         // Translate page function using Google Translate API
-         function googleTranslateElementInit() {
-            new google.translate.TranslateElement({pageLanguage: 'en', autoDisplay: false}, 'language-select');
-        }
 
-        // Translate content based on selected language
-        function translatePage(language) {
-            if (language === 'es') {
-                google.translate.TranslateElement.getInstance({pageLanguage: 'en'}).changeLanguage('es');
-            } else {
-                google.translate.TranslateElement.getInstance({pageLanguage: 'en'}).changeLanguage('en');
-            }
-        }
-    </script>
+
+
 </head>
 
 <body class="">
-        <!-- Language Switcher -->
-        <div class="language-switcher text-end px-4 pt-4">
-            <select id="language-select" onchange="translatePage(this.value)">
-                <option value="en">English</option>
-                <option value="es">Spanish</option>
-            </select>
-        </div>
+  
 
 
     <div class="conatiner  px-5">
@@ -177,7 +158,7 @@
             sliderItems[currentIndex].classList.remove('active');
             currentIndex = (currentIndex + 1) % sliderItems.length;
             sliderItems[currentIndex].classList.add('active');
-            setTimeout(nextSlide, 6000); // adjust the timeout to match your animation duration
+            setTimeout(nextSlide, 6000); 
         }
 
         nextSlide();
@@ -195,41 +176,13 @@
             });
         });
 
-        // Translate page function
-        function translatePage(language) {
-            if (language === 'es') {
-                document.getElementById('heading1').innerHTML = 'DIVERTIDO Y HAZ DIVERTIDO';
-                document.getElementById('paragraph1').innerHTML = 'Una nueva red social donde todo cambia';
-                document.getElementById('heading2').innerHTML = 'Descarga la aplicación';
-                document.getElementById('list1').innerHTML = 'Meta';
-                document.getElementById('list2').innerHTML = 'Información';
-                document.getElementById('list3').innerHTML = 'Blog';
-                document.getElementById('list4').innerHTML = 'Empleo';
-                document.getElementById('list5').innerHTML = 'Ayuda';
-                document.getElementById('list6').innerHTML = 'API';
-                document.getElementById('list7').innerHTML = 'Privacidad';
-                document.getElementById('list8').innerHTML = 'Configuración de cookies';
-                document.getElementById('list9').innerHTML = 'Condiciones';
-                document.getElementById('list10').innerHTML = 'Ubicación';
-                document.getElementById('list11').innerHTML = 'Instragram Lite';
-                document.getElementById('paragraph2').innerHTML = 'ubir contactores personas no usuarias meta verificado';
-            } else {
-                document.getElementById('heading1').innerHTML = 'FUN & MAKE FUN';
-                document.getElementById('paragraph1').innerHTML = 'A new social network where everything change';
-                document.getElementById('heading2').innerHTML = 'Download the application';
-                document.getElementById('list1').innerHTML = 'Meta';
-                document.getElementById('list2').innerHTML = 'Information';
-                document.getElementById('list3').innerHTML = 'Blog';
-                document.getElementById('list4').innerHTML = 'Employment';
-                document.getElementById('list5').innerHTML = 'Aid';
-                document.getElementById('list6').innerHTML = 'API';
-                document.getElementById('list7').innerHTML = 'Privacy';
-                document.getElementById('list8').innerHTML = 'Cookie settings';
-                document.getElementById('list9').innerHTML = 'Conditions';
-                document.getElementById('list10').innerHTML = 'Location';
-                document.getElementById('list11').innerHTML = 'Instragram Lite';
-                document.getElementById('paragraph2').innerHTML = 'join contactors non-users meta verified';
-            }
+      
+    </script>
+
+       <!-- Initialize Google Translate -->
+       <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'google_translate_element');
         }
     </script>
 </body>
