@@ -14,9 +14,11 @@
 .language-switcher{
     font-size: 15px;
 }
-.language-select{
-    width: 300px;
-    line-height: 5px;
+#language-select{
+    width: 250px;
+}
+#heading1{
+    line-height: 4px;
 }
 #svg1 {
     width: 180px;
