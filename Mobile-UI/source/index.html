@@ -21,6 +21,24 @@
     <meta charset="UTF-8">
     <title>mobile slider</title>
 
+ <!-- Google Translate API script -->
+ <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    <script>
+         // Translate page function using Google Translate API
+         function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'en', autoDisplay: false}, 'language-select');
+        }
+
+        // Translate content based on selected language
+        function translatePage(language) {
+            if (language === 'es') {
+                google.translate.TranslateElement.getInstance({pageLanguage: 'en'}).changeLanguage('es');
+            } else {
+                google.translate.TranslateElement.getInstance({pageLanguage: 'en'}).changeLanguage('en');
+            }
+        }
+    </script>
 </head>
 
 <body class="">
