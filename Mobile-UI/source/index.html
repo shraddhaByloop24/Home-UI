@@ -24,10 +24,17 @@
 </head>
 
 <body class="">
+        <!-- Language Switcher -->
+        <div class="language-switcher text-end px-4 pt-4">
+            <select id="language-select" onchange="translatePage(this.value)">
+                <option value="en">English</option>
+                <option value="es">Spanish</option>
+            </select>
+        </div>
+
 
     <div class="conatiner  px-5">
         <div class="imgs">
-
             <img src="Images/mobileframe.png" class="img-fluid " alt="">
         </div>
 
@@ -100,8 +107,11 @@
 
 
                     </div>
-                    <div class="row pt-2 ">
-                        <h5 class="text-center heading">Descarga la aplicación</h5>
+                    <div class="row pt-1 ">
+                        <h5 class="text-center main-heading heading" id="heading1">FUN & MAKE FUN</h5>
+                        <p class="text-center paragraph" id="paragraph1">A new social network where everything change
+                        </p>
+                        <h5 class="text-center heading" id="heading2">Descarga la aplicación</h5>
                         <div class="col-lg-2"></div>
                         <div class="col-lg-4">
                             <img src="Google-paly.png" class="img-fluid googlepay" alt="">
@@ -116,25 +126,24 @@
         </div>
         <div>
             <ul class="set-list">
-                <li>Meta</li>
-                <li>Información</li>
-                <li>Blog</li>
-                <li>Empleo</li>
-                <li>Ayuda</li>
-                <li>API</li>
-                <li>Privacidad</li>
-                <li>Configuración de cookies</li>
-                <li>Condiciones</li>
-                <li>Ubicación</li>
-                <li>Instragram Lite</li>
+                <li id="list1">Meta</li>
+                <li id="list2">Información</li>
+                <li id="list3">Blog</li>
+                <li id="list4">Empleo</li>
+                <li id="list5">Ayuda</li>
+                <li id="list6">API</li>
+                <li id="list7">Privacidad</li>
+                <li id="list8">Configuración de cookies</li>
+                <li id="list9">Condiciones</li>
+                <li id="list10">Ubicación</li>
+                <li id="list11">Instragram Lite</li>
             </ul>
-            <p class="text-center paragraph">subir contactores personas no usuarias meta verificado</p>
+            <p class="text-center paragraph" id="paragraph2">subir contactores personas no usuarias meta verificado</p>
         </div>
+
+
+
     </div>
-
-
-
-
 
 
 
@@ -167,6 +176,43 @@
 
             });
         });
+
+        // Translate page function
+        function translatePage(language) {
+            if (language === 'es') {
+                document.getElementById('heading1').innerHTML = 'DIVERTIDO Y HAZ DIVERTIDO';
+                document.getElementById('paragraph1').innerHTML = 'Una nueva red social donde todo cambia';
+                document.getElementById('heading2').innerHTML = 'Descarga la aplicación';
+                document.getElementById('list1').innerHTML = 'Meta';
+                document.getElementById('list2').innerHTML = 'Información';
+                document.getElementById('list3').innerHTML = 'Blog';
+                document.getElementById('list4').innerHTML = 'Empleo';
+                document.getElementById('list5').innerHTML = 'Ayuda';
+                document.getElementById('list6').innerHTML = 'API';
+                document.getElementById('list7').innerHTML = 'Privacidad';
+                document.getElementById('list8').innerHTML = 'Configuración de cookies';
+                document.getElementById('list9').innerHTML = 'Condiciones';
+                document.getElementById('list10').innerHTML = 'Ubicación';
+                document.getElementById('list11').innerHTML = 'Instragram Lite';
+                document.getElementById('paragraph2').innerHTML = 'ubir contactores personas no usuarias meta verificado';
+            } else {
+                document.getElementById('heading1').innerHTML = 'FUN & MAKE FUN';
+                document.getElementById('paragraph1').innerHTML = 'A new social network where everything change';
+                document.getElementById('heading2').innerHTML = 'Descarga la aplicación';
+                document.getElementById('list1').innerHTML = 'Meta';
+                document.getElementById('list2').innerHTML = 'Información';
+                document.getElementById('list3').innerHTML = 'Blog';
+                document.getElementById('list4').innerHTML = 'Empleo';
+                document.getElementById('list5').innerHTML = 'Ayuda';
+                document.getElementById('list6').innerHTML = 'API';
+                document.getElementById('list7').innerHTML = 'Privacidad';
+                document.getElementById('list8').innerHTML = 'Configuración de cookies';
+                document.getElementById('list9').innerHTML = 'Condiciones';
+                document.getElementById('list10').innerHTML = 'Ubicación';
+                document.getElementById('list11').innerHTML = 'Instragram Lite';
+                document.getElementById('paragraph2').innerHTML = 'ubir contactores personas no usuarias meta verificado';
+            }
+        }
     </script>
 </body>
 
