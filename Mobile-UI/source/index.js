@@ -160,7 +160,9 @@ window.onload = function () {
         data = dict["en"]
     }
 
-    document.getElementById("title").innerHTML = data["title"];
-    document.getElementById("description").innerHTML = data["description"];
-    document.getElementById("heading2").innerHTML = "Download the application"; 
+    document.getElementById("txt-title").innerHTML = data["title"]
+    document.getElementById("txt-description").innerHTML = data["description"]
+    document.getElementById("heading2").innerHTML = data["heading2"]
+
 };
+
