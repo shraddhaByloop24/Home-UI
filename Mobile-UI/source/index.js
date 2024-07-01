@@ -1,15 +1,17 @@
 const dict = {
     "en": {
-        "title": "Discover New Friends, Practice Language",
-        "description": "On Hablo Talk, you can make new friends and practice languages with native speakers!"
+        "title": "FUN & MAKE FUN",
+        "description": "A new social network where everything change",
+        "heading": "Download the Application"
     },
     "fr": {
         "title": "Découvrez de nouveaux amis, pratiquez les langues",
         "description": "Sur Hablo Talk, vous pouvez vous faire de nouveaux amis et pratiquer les langues avec des locuteurs natifs !"
     },
     "es": {
-        "title": "Descubre nuevos amigos, practica idiomas",
-        "description": "¡En Hablo Talk, puedes hacer nuevos amigos y practicar idiomas con hablantes nativos!"
+        "title": "DIVERTIRSE y DIVERTIRSE",
+        "description": "Una nueva red social donde todo cambia",
+        "heading":"Descargue la aplicación"
     },
     "de": {
         "title": "Entdecke neue Freunde, Sprachen üben",
@@ -145,24 +147,18 @@ const dict = {
     }
 }
 
-
 window.onload = function () {
     let deviceLanguage = navigator.language || navigator.userLanguage;
-
-    // Extract the language code
     let languageCode = deviceLanguage.split("-")[0];
 
-    let data = {}
-
-    if (languageCode in dict) {
-        data = dict[languageCode]
+    let data = {};
+    if (languageCode === "en" || languageCode === "es") {
+        data = dict[languageCode];
     } else {
-        data = dict["en"]
+        data = dict["en"]; // Default to English if the language is not found
     }
 
     document.getElementById("txt-title").innerHTML = data["title"]
     document.getElementById("txt-description").innerHTML = data["description"]
-    document.getElementById("heading2").innerHTML = data["heading"]
-
+    document.getElementById("txt-heading").innerHTML = data["heading"]
 };
-
