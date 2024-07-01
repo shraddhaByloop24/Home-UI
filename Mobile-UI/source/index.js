@@ -162,5 +162,5 @@ window.onload = function () {
 
     document.getElementById("title").innerHTML = data["title"];
     document.getElementById("description").innerHTML = data["description"];
-    document.getElementById("heading2").innerHTML = "Download the application"; // Update this line
+    document.getElementById("heading2").innerHTML = "Download the application"; 
 };
