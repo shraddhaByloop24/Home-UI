@@ -162,7 +162,7 @@ window.onload = function () {
 
     document.getElementById("txt-title").innerHTML = data["title"]
     document.getElementById("txt-description").innerHTML = data["description"]
-    document.getElementById("heading2").innerHTML = data["heading2"]
+    document.getElementById("heading2").innerHTML = data["heading"]
 
 };
 
